@@ -1,0 +1,265 @@
+body{
+    font-family: "Tajawal", serif;   
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.content{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+   height: 150px;
+    width: 100%;
+    margin: 10px 50px 0 30px;
+}
+.content-right{
+    width: 20%;
+   
+}
+.content-right img{
+    width: 50px;
+    height: 50px;
+   
+}
+.content-left{
+   
+    font-size: 13px;
+    width: 70%;
+    line-height: 28px;
+}
+.content-left h4{
+    font-weight: 300;
+    font-size: 20px;
+}
+.content-left h5{
+   margin-top: 5px;
+   margin-bottom: 50px;
+}
+.section{
+    margin-top: 20px;
+    background-color: #f0f0f0be;
+   width: 100%;
+   height: 80%;
+    position: relative;
+}
+.section h1{
+    width: 100%;
+    height: 15%;
+   /* margin: 0 0 20px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 0;
+    margin-bottom: 0px;
+    outline: none;
+    text-align: center;
+    
+}
+.sections{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 250px;
+}
+.section-right, .section-center, .section-left{
+border:  1px solid #eec493be;
+    width: 30%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.section-right{
+    z-index: 1;
+}
+.icon{
+ padding-top: 15px;
+    border-top: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+.icon h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.section-center h4, .section-right h4, .section-left h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 20px;
+  
+}
+.icon img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    padding: 5px;
+}
+
+.icon:hover{
+    height: 140px;
+    background: linear-gradient(to bottom,#ffcbb1d0 20%, #f9e1d69e 80%);
+    width: 100%;
+border-radius: 20px 20px 0 0;
+}
+
+/* circle */
+.circle{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -10px;
+    left: -0px;
+    z-index: 10;
+    filter: blur(30px);
+    background-color: #97c2ef8c;
+    /* border-radius: 50%; */
+    
+}
+
+.circleT{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: -10px;
+    /* top: 100px; */
+   right: 10px;
+    z-index: 0;
+    filter: blur(30px);
+    background-color: #97c2ef8c;
+}
+
+
+/* responsive: */
+
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .circle{
+        width: 50px;
+        height: 80px;
+        position: absolute;
+        top: -10px;
+        left: -0px;
+        z-index: 10;
+        filter: blur(30px);
+        background-color: #97c2ef8c;
+        /* border-radius: 50%; */
+        
+    }
+    .circleT{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 970px;
+       right: 10px;
+        z-index: 10;
+        filter: blur(30px);
+        background-color: #97c2ef8c;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 65%;
+        width: 100%;
+        margin-right: 20px;
+        margin: 0;
+    }
+    .content-right, .content-left{
+        width: 100%;
+        
+    }
+    .content-right{
+        margin-top: 70px;
+    }
+    .section{
+        /* height: 100%; */
+        height: auto;
+        padding: 20px;
+    }
+    .section h1{
+        /* height: 10%; */
+        height: auto;
+        font-size: 20px;
+    }
+    .sections{
+        height: 100%;
+    }
+    .section-right, .section-center, .section-left{
+        width: 70%;
+     margin: 10px auto;
+    }
+    .icon{
+        height: 100px;
+    }
+    .icon img{
+        height: 60px;
+        width: 60px;
+    }
+    .icon h2{
+        font-size: 15px;
+    }
+    .section-right h4, .section-center h4, .section-left h4{
+        font-size: 20px;
+    }
+    .content-left h4{
+        font-size: 15px;
+    }
+    .content-left h5{
+        font-size: 13px;
+    }
+}
+@media (max-width:1030px){
+    .content{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: flex-start;
+        height: 400px;
+    }
+    .content-right{
+        width: 100%;
+    }
+    .content-left{
+        width: 80%;
+    }
+}
+@media(max-width:676px){
+    .content{
+        height: 480px;
+    }
+}
+
+@media(max-width:409px){
+    .content{
+        height: 580px;
+    }
+    .content-right{
+        width: 100%;
+    }
+    .content-left{
+        width: 100%;
+    }
+}
