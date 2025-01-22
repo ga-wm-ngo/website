@@ -1,0 +1,67 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.rescue-stats {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1 1 20%;
+    max-width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.stat-item {
+    border-radius: 10px;
+    padding: 20px;
+    height: 200px; 
+    text-align: center;
+}
+
+.stat-item i {
+    font-size: 40px;
+    color: #ff7f50;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; 
+}
+
+.stat-item:hover i {
+    color: #3787ff;
+    cursor: pointer;
+}
+
+
+.stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #666;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 100;
+}
