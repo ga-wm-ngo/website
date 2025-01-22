@@ -27,6 +27,7 @@ export default function Home() {
        <img src="Screenshot 2025-01-16 131945.png" />
         <h2>تطوع</h2>
     </div>
+<h4>ساهم بجهدك ووقتك لدعم المبادرات المجتمعية , سواء كنت تساعد في رعاية الحيوانات او تنظيم الفعاليات,فإن مشاركتك تصنع فرقا كبيرا.</h4>
 </div>
 
 <div className="section-left">
